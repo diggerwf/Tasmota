@@ -374,7 +374,7 @@
 \*********************************************************************************************/
 
 // -- Localization --------------------------------
-  // If non selected the default en-GB will be used
+  // If non selected the default de_DE will be used
 //#define MY_LANGUAGE            af_AF           // Afrikaans in South Africa
 //#define MY_LANGUAGE            bg_BG           // Bulgarian in Bulgaria
 //#define MY_LANGUAGE            ca_AD           // Catalan in All catalan speaking countries ( Andorra )
@@ -840,7 +840,7 @@
     #define MAX_TOUCH_BUTTONS 16                 // Virtual touch buttons
 
 // -- SPI sensors ---------------------------------
-//#define USE_SPI                                  // Hardware SPI using GPIO12(MISO), GPIO13(MOSI) and GPIO14(CLK) in addition to two user selectable GPIOs(CS and DC)
+#define USE_SPI                                  // Hardware SPI using GPIO12(MISO), GPIO13(MOSI) and GPIO14(CLK) in addition to two user selectable GPIOs(CS and DC)
 
 #ifdef USE_SPI
 //  #define USE_NRF24                              // Add SPI support for NRF24L01(+) (+2k6 code)
@@ -853,9 +853,9 @@
 //    #define USE_DISPLAY_RA8876                   // [DisplayModel 10] [I2cDriver39] (Touch)
 //    #define USE_DISPLAY_ST7789                   // [DisplayModel 12] Enable ST7789 module
     // REMOVED -- #define USE_DISPLAY_SSD1331                  // [DisplayModel 14] Enable SSD1331 module
-//  #define USE_RC522                              // Add support for MFRC522 13.56Mhz Rfid reader (+6k code)
-//    #define USE_RC522_DATA_FUNCTION              // Add support for reading data block content (+0k4 code)
-//    #define USE_RC522_TYPE_INFORMATION           // Add support for showing card type (+0k4 code)
+  #define USE_RC522                              // Add support for MFRC522 13.56Mhz Rfid reader (+6k code)
+    #define USE_RC522_DATA_FUNCTION              // Add support for reading data block content (+0k4 code)
+    #define USE_RC522_TYPE_INFORMATION           // Add support for showing card type (+0k4 code)
 //  #define USE_MCP2515                            // Add support for can bus using MCP2515 (+7k code)
 //  #define USE_CANSNIFFER                         // Add support for can bus sniffer using MCP2515 (+5k code)
 //  #define USE_SPI_LORA                           // Add support for LoRaSend and LoRaCommand (+4k code)
